@@ -1,0 +1,27 @@
+name = hsu2
+description = HSU general use drupal theme
+core = 7.x
+
+; CSS
+stylesheets[all][] = _/css/style.css
+
+; JS
+scripts[] = _/js/modernizr-1.7.min.js
+
+; Regions
+regions[intro] = Introduction - Home
+regions[sidebar_first] = Right sidebar
+regions[sidebar_second] = Left sidebar
+regions[footer_firstcolumn] = Footer - Column 1
+regions[footer_secondcolumn] = Footer - Column 2
+regions[footer_thirdcolumn] = Footer - Column 3
+regions[help] = Help
+
+; Required Regions
+regions[content] = Content
+regions[page_top] = Page Top
+regions[page_bottom] = Page Bottom
+
+; Features
+features[] = name
+features[] = main_menu

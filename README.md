@@ -1,0 +1,1 @@
+The second general use theme for drupal 7. Being used on various sites already—President, aavp, academic programs & more.

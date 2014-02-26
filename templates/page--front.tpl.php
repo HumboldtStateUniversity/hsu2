@@ -21,8 +21,11 @@
 
 
 		<div id="photos">
-			<img src="<?php print $base_path . $directory ?>/_/img/p2/2.jpg" alt="" id="photo1" />
-			<img src="<?php print $base_path . $directory ?>/_/img/p1/3.jpg" alt="" id="photo2" />
+			<?php if ($photos_rotate): ?>
+				<?php print render($all_photos); ?>
+			<?php else: ?>
+				<img src="<?php print render($photos_select); ?>" alt=" " />
+			<?php endif; ?>
 		</div>
 
 	

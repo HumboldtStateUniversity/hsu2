@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  Font Awesome
     the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------
@@ -28,7 +29,7 @@
   font-weight: normal;
   font-style: normal; }
 
-/* normalize.css v1.1.0 | MIT License | git.io/normalize */
+/*! normalize.css v1.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -209,7 +210,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  _font-family: "courier new", monospace;
+  _font-family: 'courier new', monospace;
   font-size: 1em; }
 
 /**
@@ -328,7 +329,7 @@ form {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -513,7 +514,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0; }
 
@@ -725,7 +726,7 @@ header a, header a:hover {
   text-decoration: none; }
 
 header h1 {
-  font-family: "Droid Serif", georgia, serif;
+  font-family: 'Droid Serif', georgia, serif;
   font-weight: normal;
   font-size: 30px;
   margin: 0; }
@@ -762,42 +763,6 @@ header h1 {
 .custom-search-box {
   width: 110px; }
 
-/** navigation **/
-nav {
-  background-color: #fff;
-  margin: 0;
-  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
-  /* FF3.5+ */
-  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
-  /* Saf3.0+, Chrome */
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
-  /* Opera 10.5, IE9, Chrome 10+ */ }
-
-nav ul a, ul li.nolink span {
-  color: #204068;
-  font: 16px/18px "Droid Serif", georgia, serif;
-  text-decoration: none;
-  display: block;
-  padding: 10px 0 10px 23px; }
-
-nav ul li {
-  padding-left: 15px;
-  border-bottom: 1px solid #e5e5de; }
-
-nav ul ul a, ul ul li.nolink span {
-  color: #5d7801;
-  font: 14px/17px Helmet, Freesans, sans-serif;
-  padding: 5px 0 5px 33px; }
-
-nav ul ul {
-  margin: -5px 0 10px 0; }
-
-nav ul ul li {
-  border-bottom: none; }
-
-nav li a.active, nav li li a.active {
-  color: #5e801b; }
-
 /** secondary content **/
 .region-sidebar-first {
   float: right;
@@ -806,7 +771,7 @@ nav li a.active, nav li li a.active {
   left: 18px;
   padding: 1px 15px 20px 15px;
   margin-bottom: 20px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   background-color: #fff; }
 
 /** footer **/
@@ -894,42 +859,24 @@ span.word-viewer {
   margin-top: 55px; }
 
 #photos {
-  height: 280px;
   position: relative;
-  width: 75.1898%;
+  width: 74%;
   float: right;
-  margin: -28px -24px 10px 0; }
-
-#photos img {
-  background-color: #fff;
-  padding: 7px;
-  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6); }
-
-#photo1 {
-  position: absolute;
-  top: 13px;
-  left: 7px; }
-
-#photo2 {
-  position: absolute;
-  top: 7px;
-  right: 0;
-  z-index: 20;
-  -moz-transform: rotate(1.5deg);
-  /* FF3.5+ */
-  -o-transform: rotate(1.5deg);
-  /* Opera 10.5 */
-  -webkit-transform: rotate(1.5deg);
-  /* Saf3.1+, Chrome */
-  -ms-transform: rotate(1.5deg);
-  /* IE9 */
-  transform: rotate(1.5deg); }
-
-.no-csstransforms #photo2 {
-  filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */  		M11=0.9996573249755573, M12=-0.02617694830787315, M21=0.02617694830787315, M22=0.9996573249755573, sizingMethod='auto expand');
-  zoom: 1; }
+  margin: -28px -24px 20px 0; }
+  #photos img {
+    background-color: #fff;
+    padding: 7px;
+    -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 570px; }
+  #photos ul, #photos li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    max-width: 570px; }
 
 .region-intro {
   padding-bottom: 35px; }
@@ -943,31 +890,31 @@ p {
   margin: 15px 0 10px 0; }
 
 h1, h2 {
-  font: 22px/28px "Droid Serif", georgia, serif;
+  font: 22px/28px 'Droid Serif', georgia, serif;
   margin: 10px 0 20px 0; }
 
 h3 {
-  font: bold 16px/19px "Droid Serif", georgia, serif;
+  font: bold  16px/19px 'Droid Serif', georgia, serif;
   margin: 25px 0 10px 0; }
 
 h4 {
-  font: bold 14px/16px "Droid Serif", georgia, serif;
+  font: bold 14px/16px 'Droid Serif', georgia, serif;
   margin: 15px 0 10px 0; }
 
 h5 {
-  font: bold 13px/16px "Droid Serif", georgia, serif;
+  font: bold  13px/16px 'Droid Serif', georgia, serif;
   margin: 15px 0 10px 0; }
 
 h6 {
-  font: bold 12px/14px "Droid Serif", georgia, serif;
+  font: bold 12px/14px 'Droid Serif', georgia, serif;
   margin: 15px 0 10px 0; }
 
 .region-sidebar-first h1, .region-sidebar-first h2 {
-  font: bold 16px/18px "Droid Serif", georgia, serif;
+  font: bold 16px/18px 'Droid Serif', georgia, serif;
   margin: 15px 0 10px 0; }
 
 footer h1, footer h2 {
-  font: bold 18px/24px "Droid Serif", georgia, serif;
+  font: bold 18px/24px 'Droid Serif', georgia, serif;
   margin: 15px 0 10px 0; }
 
 footer a, footer a:hover {
@@ -1027,7 +974,7 @@ thead td, thead th {
   margin-bottom: 15px; }
 
 .page-taxonomy .node-teaser h2 {
-  font: bold 16px/19px "Droid Serif", georgia, serif;
+  font: bold 16px/19px 'Droid Serif', georgia, serif;
   margin: 5px 0; }
 
 .page-taxonomy .node-teaser .field-name-field-filelink, .page-projects .field-content h3, .page-projects .field-content p {
@@ -1130,26 +1077,36 @@ ul.primary li a:hover, ul.primary li.active a:hover, #main ul.primary li.active 
   border-color: #f06f1a; }
 
 /* comment link styles */
-#main .nodelinks {
-  margin: 0 0 30px 0; }
+#main ul.nodelinks, #main .comment .links {
+  margin: 0 0 30px 0;
+  padding: 0; }
 
-#main .nodelinks ul.links li, #main .commentlinks ul.links li {
+#main .nodelinks li {
   display: block;
   float: left;
   padding: 2px 8px 2px 6px;
   background-color: #fff;
-  border: 1px solid white;
+  border: 1px solid #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-right: 7px;
+  height: 18px; }
+
+#main .comment .links li {
+  display: inline-block;
+  padding: 2px 8px 2px 6px;
+  background-color: #fff;
+  border: 1px solid #fff;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   margin-right: 7px; }
 
-#main ul.links li.comment-add:before, #main ul.links li.comment-comments:before, #main ul.links li.comment_forbidden:before, #main ul.links li.node-readmore:before, #main .commentlinks ul.links li.comment-delete:before, #main .commentlinks ul.links li.comment-edit:before, #main .commentlinks ul.links li.comment-reply:before {
+#main li.comment-add:before, #main li.comment-comments:before, #main li.comment_forbidden:before, #main li.node-readmore:before, #main li.comment-delete:before, #main li.comment-edit:before, #main li.comment-reply:before, #main li.blog_usernames_blog:before, #main li.comment-new-comments:before {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   display: inline-block;
   padding-right: 4px;
-  text-decoration: inherit;
   color: #666; }
 
 li.comment-add:before {
@@ -1179,6 +1136,14 @@ li.comment-edit:before {
 li.comment-reply:before {
   content: "\f045"; }
 
+li.blog_usernames_blog:before {
+  content: "\f007"; }
+
+/*user*/
+li.comment-new-comments:before {
+  content: "\f069"; }
+
+/*asterisk*/
 .no-backgroundsize #content-wrap .inner {
   width: 970px;
   padding: 1px 0 0 0;
@@ -1281,20 +1246,4 @@ li.comment-reply:before {
     width: auto;
     float: none;
     margin: 0;
-    padding: 5px 25px 10px 10px; }
-
-  #photo1 {
-    display: none; }
-
-  #photo2 {
-    position: static;
-    top: 0;
-    left: 0;
-    z-index: 20;
-    max-width: 367px;
-    width: 100%;
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg); } }
+    padding: 5px 25px 10px 10px; } }

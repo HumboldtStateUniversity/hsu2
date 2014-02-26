@@ -22,7 +22,8 @@
 	<div id="main"<?php if ($page['sidebar_first']): print ' class="twocol"'; endif; ?>>
 
 		<div class="primary-content">
-		
+			
+			<?php if ($breadcrumb_status): ?><div id="breadcrumb"><?php print $breadcrumb; ?></div><?php endif; ?>
 			<?php print $messages; ?>
 		
 			<?php print render($title_prefix); ?>

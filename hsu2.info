@@ -25,3 +25,14 @@ regions[page_bottom] = Page Bottom
 ; Features
 features[] = name
 features[] = main_menu
+
+; add logo and favicon to prevent logo/favicon errors when updating theme settings
+; access to logo & favicon is turned off in theme-settings.php
+features[] = logo
+features[] = favicon
+
+; Settings
+settings[breadcrumb_status] = 0
+settings[photos_select] = 1
+settings[photos_rotate] = 0
+settings[navigation_layout] = vertical

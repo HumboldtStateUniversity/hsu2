@@ -1,4 +1,9 @@
 <?php
+
+  function hsu2_preprocess_html(&$variables) {
+  # add web font  
+    drupal_add_css('//fonts.googleapis.com/css?family=Droid+Serif:400,700', array('type' => 'external'));
+  }
 	
 	function hsu2_preprocess_page(&$variables) {
   # menu tree style navigation

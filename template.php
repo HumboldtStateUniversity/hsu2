@@ -13,7 +13,7 @@
   # switch css for navigation layout -- vertical vs horizontal
     $navigation = theme_get_setting('navigation_layout');
 
-    $css_path = drupal_get_path('theme', 'hsu2') . '/_/css/';
+    $css_path = drupal_get_path('theme', 'hsu2') . '/css/';
     if ($navigation == 'vertical'){
       drupal_add_css($css_path . 'vertical.css', array('group' => CSS_THEME));
     } else {
@@ -26,7 +26,7 @@
   # set variables for photos
 
     # single image
-    $image_path = drupal_get_path('theme', 'hsu2') . '/_/img/banner/';
+    $image_path = drupal_get_path('theme', 'hsu2') . '/img/banner/';
     $image_file = theme_get_setting('photos_select') . '.jpg';
     $variables['photos_select'] = $image_path . $image_file;
 
@@ -37,12 +37,12 @@
 
 
     #add js for rotating
-    $js_path = drupal_get_path('theme', 'hsu2') . '/_/js/';
+    $js_path = drupal_get_path('theme', 'hsu2') . '/js/';
 
     if ($rotate == 1){
       drupal_add_js($js_path . 'jquery.cycle.all.js', array('group' => JS_LIBRARY));
       if ($variables['is_front']) {
-        drupal_add_js('(function ($) {$("#photos ul").cycle({fx:"fade",random:1,fit:1});}(jQuery));', array('type' => 'inline', 'scope' => 'header', 'every_page' => FALSE, 'weight' => 5));
+        drupal_add_js('(function ($) {$(".photo ul").cycle({fx:"fade",random:1,fit:1});}(jQuery));', array('type' => 'inline', 'scope' => 'header', 'every_page' => FALSE, 'weight' => 5));
       }
     }
 

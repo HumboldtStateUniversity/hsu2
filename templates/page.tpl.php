@@ -1,11 +1,11 @@
 <div class="wrapper">
-	<div id="masthead"> 
-		<div id="logowrapper"><a id="logo" href="http://www.humboldt.edu/"> 
+	<div class="masthead"> 
+		<div class="logowrapper"><a class="logo" href="http://www.humboldt.edu/"> 
 			<span class="visuallyhidden">Humboldt State University</span></a> 
 		</div> 
 	</div>
 
-<div id="content-wrap">	
+<div class="content-wrap">	
 	<div class="clearfix inner">
 	<header><h1><a href="<?php print $front_page ?>"><?php print $site_name; ?></a></h1></header>
 	<div class="skip"><a href="#main">skip navigation</a></div>
@@ -51,11 +51,11 @@
 	</div>
 </div>
 
-		<div id="circleh"><a href="http://www.humboldt.edu"><span class="visuallyhidden">Humboldt State University</span></a>
+		<div class="circleh"><a href="http://www.humboldt.edu"><span class="visuallyhidden">Humboldt State University</span></a>
 			<div class="circle"></div>
 		</div>
 		
-<div id="footer-wrap">	
+<div class="footer-wrap">	
 	<footer class="clearfix">
 
 			<?php print render($page['footer_firstcolumn']); ?>

@@ -3,10 +3,10 @@ description = HSU general use drupal theme
 core = 7.x
 
 ; CSS
-stylesheets[all][] = _/css/style.css
+stylesheets[all][] = css/style.css
 
 ; JS
-scripts[] = _/js/modernizr-1.7.min.js
+scripts[] = js/modernizr-2.6.2-respond-1.1.0.min.js
 
 ; Regions
 regions[intro] = Introduction - Home
